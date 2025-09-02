@@ -6,6 +6,11 @@
 //
 //   determines when new entropy is ready to be forwarded
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_assert_sec_cm.svh"
+`include "prim_flop_macros.sv"
+`include "prim_assert.sv"
+
 module entropy_src_main_sm
   import entropy_src_main_sm_pkg::*;
 (

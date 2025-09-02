@@ -313,7 +313,7 @@ module chip_earlgrey_verilator (
   prim_mubi_pkg::mubi4_t io_clk_byp_req;
   prim_mubi_pkg::mubi4_t io_clk_byp_ack;
   prim_mubi_pkg::mubi4_t div_step_down_req;
-  logic hi_speed_sel;
+  prim_mubi_pkg::mubi4_t hi_speed_sel;
 
   // DFT connections
   logic scan_en;
@@ -324,7 +324,7 @@ module chip_earlgrey_verilator (
   logic [ast_pkg::Ast2PadOutWidth-1:0] ast2pinmux;
 
   // Jitter enable
-  logic jen;
+  prim_mubi_pkg::mubi4_t jen;
 
   // reset domain connections
   import rstmgr_pkg::PowerDomains;
@@ -339,6 +339,8 @@ module chip_earlgrey_verilator (
   assign unused_pwr_clamp = base_ast_pwr.pwr_clamp;
 
   prim_mubi_pkg::mubi4_t ast_init_done;
+  prim_mubi_pkg::mubi4_t ast_clk_byp_req;
+  prim_mubi_pkg::mubi4_t scanmode;
   ast u_ast (
     // different between verilator and other platforms
     .clk_ast_ext_i         ( clk_i ),

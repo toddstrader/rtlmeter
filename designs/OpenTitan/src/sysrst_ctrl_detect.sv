@@ -19,6 +19,9 @@
 // and enabled again in order to reset the internal FSM into its idle state.
 //
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_flop_macros.sv"
+
 module sysrst_ctrl_detect
   import sysrst_ctrl_pkg::*;
 #(

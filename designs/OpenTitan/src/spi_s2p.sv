@@ -4,6 +4,9 @@
 //
 // SPI Serial-to-Parallel interface
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_flop_macros.sv"
+
 module spi_s2p
   import spi_device_pkg::*;
 (

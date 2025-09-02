@@ -6,6 +6,9 @@
 //
 //   does hardware-based csrng app interface command requests
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_flop_macros.sv"
+
 module edn_main_sm import edn_pkg::*;
 (
   input logic                   clk_i,

@@ -21,6 +21,8 @@
  * - triple error detection
  */
 
+`include "prim_assert_dummy_macros.svh"
+
 module otbn_rf_bignum
   import otbn_pkg::*;
 #(

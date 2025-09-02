@@ -10,6 +10,9 @@
 // *Module Description:  Analog/Digital Converter
 //############################################################################
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_flop_macros.sv"
+
 module adc #(
   parameter int unsigned AdcCnvtClks = 19,// 21cc from adc_chnsel_i change to adc_d_val_o assertion
   parameter int AdcChannels = 2,          // ADC number of  Channels

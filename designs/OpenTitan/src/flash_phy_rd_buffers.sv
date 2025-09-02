@@ -19,6 +19,11 @@
 // Basically...this is a tag ram + data ram combined into one
 //
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_assert_sec_cm.svh"
+`include "prim_flop_macros.sv"
+`include "prim_assert.sv"
+
 module flash_phy_rd_buffers import flash_phy_pkg::*; (
   input clk_i,
   input rst_ni,

@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 `include "prim_assert.sv"
+`include "prim_assert_dummy_macros.svh"
 
 module prim_xilinx_clock_mux2 #(
   parameter bit NoFpgaBufG = 1'b0

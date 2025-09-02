@@ -5,6 +5,9 @@
 // Description: UART core module
 //
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_flop_macros.sv"
+
 module uart_core (
   input                  clk_i,
   input                  rst_ni,

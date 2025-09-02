@@ -4,6 +4,11 @@
 //
 // SPI byte to SPI (Single/ Dual/ Quad)
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_assert_sec_cm.svh"
+`include "prim_flop_macros.sv"
+`include "prim_assert.sv"
+
 module spi_p2s
   import spi_device_pkg::*;
 (

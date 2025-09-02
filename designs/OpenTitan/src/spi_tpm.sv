@@ -6,6 +6,9 @@
 /*
 */
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_flop_macros.sv"
+
 module spi_tpm
   import spi_device_pkg::*;
   import spi_device_reg_pkg::NumLocality;

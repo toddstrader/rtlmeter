@@ -13,6 +13,8 @@
  * - 1 write port
  * - Half (WLEN) word write enables
  */
+`include "prim_assert_dummy_macros.svh"
+
 module otbn_rf_bignum_ff
   import otbn_pkg::*;
 (

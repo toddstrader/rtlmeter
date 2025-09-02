@@ -8,6 +8,9 @@
  * This provides a key and nonce for scrambling the OTBN IMem and DMem. The OTP
  * key interface is used to request a new key and nonce when they are requested.
  */
+`include "prim_assert_dummy_macros.svh"
+`include "prim_flop_macros.sv"
+
 module otbn_scramble_ctrl
   import otbn_pkg::*;
 #(

@@ -27,6 +27,8 @@
  *   for use as a call stack
  * - triple error detection
  */
+`include "prim_assert_dummy_macros.svh"
+
 module otbn_rf_base
   import otbn_pkg::*;
 #(

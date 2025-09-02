@@ -70,6 +70,9 @@
  * attacks or reliability issues, then SW in RoT can redirect the host system's
  * requests to the other half partitions in the flash device.
  */
+`include "prim_assert_dummy_macros.svh"
+`include "prim_flop_macros.sv"
+
 module spi_passthrough
   import spi_device_pkg::*;
 (

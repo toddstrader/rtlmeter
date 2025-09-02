@@ -11,6 +11,11 @@
 // to serve a new request.
 //
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_assert_sec_cm.svh"
+`include "prim_flop_macros.sv"
+`include "prim_assert.sv"
+
 module flash_phy_rd_buf_dep import flash_phy_pkg::*;(
   input clk_i,
   input rst_ni,

@@ -5,6 +5,9 @@
 // Module to manage TX & RX FIFO windows for Serial Peripheral Interface (SPI) host IP.
 //
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_flop_macros.sv"
+
 module spi_host_window
 #(
   parameter bit          EnableRacl             = 1'b0,

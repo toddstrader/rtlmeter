@@ -10,6 +10,11 @@
 //                --rnd_cnst_seed \
 //                1017106219537032642877583828875051302543807092889754935647094601236425074047
 
+`include "prim_assert_dummy_macros.svh"
+`include "prim_assert_sec_cm.svh"
+`include "prim_flop_macros.sv"
+`include "prim_assert.sv"
+
 module top_earlgrey #(
   // Manually defined parameters
 
